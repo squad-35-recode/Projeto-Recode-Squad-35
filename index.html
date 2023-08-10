@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Link JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <!-- Link Font-Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Página Principal</title>
+</head>
+<body>
+    <!-- Menu Principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Rede Profissionalizante</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"> <i class="fas fa-home"></i> Página Principal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fas fa-book-open"></i> Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fas fa-envelope"></i> Mensagens</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fas fa-bell"></i></i> Notificações</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Perfil
+                </a>
+                <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-user-circle fs-4 px-1"></i> <span>Nome de Usuário</span></a></li>
+                  <li><a class="dropdown-item" href="#"><button class="btn border" id="btnPerfil">Ver Perfil</button></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Configurações</a></li>
+                  <li><a class="dropdown-item" href="#">Ajuda</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sair</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar Assunto" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Carousel Banners -->
+        <section class="container-full">
+            <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://www.cursoemvideo.com/" target="_blank"><img src="./image/cursoemvideo.png" class="d-block w-100" alt="..."></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://www.sebrae.com.br/sites/PortalSebrae/cursoseeventoseducacao?uf=SP" target="_blank"><img src="./image/sebrae_cursos.jpg" class="d-block w-100" alt="..."></a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/cursos-1.webp" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </section>
+
+        <div class="container mx-auto d-flex flex-lg-row">
+            
+            <section class="col col-md-9">
+                <!-- Input Postagem -->
+                <section class="container my-3 border rounded p-3 bg-white">
+                    <label for="formPostagem" class="fw-semibold fs-3 mb-3"> Faça uma postagem: </label>
+                    <form action="POST" id="formPostagem">
+                        <div class="mb-3">
+                            <label for="inputTituloPostagem" class="form-label fs-4">Título do Post</label>
+                            <input type="text" class="form-control" id="inputTituloPostagem" placeholder="Título da Postagem">
+                          </div>
+                          <div class="mb-3">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                          <div>
+                            <button class="btn fs-4 border rounded-circle mb-3 mx-2 shadow-sm" id="enviarArquivo"><i class="fas fa-image"></i></button>
+                            <button class="btn fs-4 border rounded-circle mb-3 mx-2 shadow-sm" id="enviarArquivo"><i class="fas fa-video"></i></button>
+                            <button class="btn fs-4 border rounded-circle mb-3 mx-2 shadow-sm" id="enviarArquivo"><i class="fas fa-calendar-alt"></i></button>
+                          </div>
+                          <div>
+                              <button class="btn bg-primary text-light">Postar</button>
+                              <button class="btn text-danger">Excluir</button>
+                          </div>
+                    </form>
+                </section>
+            
+                <h3 class="text-center">Feed</h3>
+                <!-- Área de Posts -->
+                <section class="container my-3 border rounded p-4 bg-white">
+                    <div class="mb-3 row row-cols-auto">
+                        <div class="col float-start">
+                            <a class="dropdown-item" href="#">
+                                <img src="./image/pessoas/mulher-1.jpg" alt="" id="imgPerfilFeed" class="img-thumbnail img-fluid" style="width: 100px; height: 140px;">
+                            </a>
+                        </div>
+                        <div class="col py-4">
+                            <a href="#" id="nomeUsuario">Nome de Usuário</a>
+                            <br>
+                            <span class="text-muted">Resumo da Bio do Usuário</span>
+                            <br>
+                            <span class="text-muted">12h</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputTituloPostagem" class="form-label fs-4">Título da Postagem</label>
+                    </div>
+                    <div class="mb-3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit dolorum ab nesciunt, magni laboriosam vero ut iure labore accusamus temporibus officia, unde animi aliquam sunt asperiores, voluptatibus alias dolorem eum.</p>
+                    </div>
+                    <div class="mb-3">
+                        <img src="./image/free-course.jpg" alt="" class="img-fluid">
+                    </div>
+            
+                    <div>
+                        <button class="btn bg-primary text-light"><i class="fas fa-thumbs-up"></i> Gostei</button>
+                        <button class="btn btn-white fs-3"><i class="fas fa-share-alt-square"></i></i></button>
+                    </div>
+            
+                </section>
+            </section>
+
+            <section class="col-3 mx-3" id="areaLateral">
+                <section class="my-3 border rounded p-3 bg-white">
+                    <label for="bannerDivulgação" class="fw-semibold fs-3 mb-3 text-center"> Banner de Divulgação </label>
+                    <div id="bannerDivulgação">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore amet corporis facilis dolorem vitae maiores repudiandae aliquam ratione nulla dignissimos non rerum, itaque aperiam voluptas sapiente nostrum ipsum ipsa dolores!
+                        </p>
+                    </div>
+                   
+                </section>
+
+                <section class="container my-3 border rounded p-4 bg-white">
+                    <label for="bannerDivulgação" class="fw-semibold fs-3 mb-3 text-center"> Local de Recomendações </label>
+                    <div id="bannerDivulgação">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore amet corporis facilis dolorem vitae maiores repudiandae aliquam ratione nulla dignissimos non rerum, itaque aperiam voluptas sapiente nostrum ipsum ipsa dolores!
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+
+    </main>
+
+    
+</body>
+</html>

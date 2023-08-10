@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+}
+
+/* Menu Principal */
+#btnPerfil:hover {
+    background-color: rgb(118, 118, 255);
+    color: white;
+}
+
+/* Carousel */
+.carousel-item {
+    height: 50vh;
+}
+
+
+/* Área de Postagem */
+#enviarArquivo {
+    transition: 0.5s ease;
+}
+
+#enviarArquivo:hover {
+    box-shadow: none!important;
+}
+
+#nomeUsuario {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease;
+}
+
+#nomeUsuario:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+#imgPerfilFeed {
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+@media screen and (max-width: 990px) {
+    #areaLateral {
+        display: none;
+    }
+};
