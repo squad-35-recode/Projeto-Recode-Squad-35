@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <title>Cadastro</title>
+    <title>Login</title>
 </head>
 <body style="padding-top: 70px;">
     <!-- Menu Principal -->
@@ -27,15 +27,18 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"> <i class="fas fa-home"></i> Página Principal</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> <i class="fas fa-book-open"></i> Cursos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#"> <i class="fas fa-user"></i> Cadastrar / Entrar</a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html"> <i class="fas fa-home"></i> Página Principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> <i class="fas fa-book-open"></i> Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro.html"> Cadastrar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="login.html"> Entrar</a>
+                </li>
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Pesquisar Assunto" aria-label="Search">
@@ -46,7 +49,6 @@
     </nav>
 
     <main>
-        
         <section class="h-100 h-custom position">
             <div class="container py-5 h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">
@@ -56,61 +58,35 @@
                           class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
                           alt="Sample photo">
                             <div class="card-body p-4 p-md-5">
-                            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Acesse sua conta</h3>
+                            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2 text-center">Acesse sua conta</h3>
               
                             <form class="px-md-2">
-              
-                                <div class="form-outline mb-4">
-                                    <input type="text" id="nomeCadastro" class="form-control" />
-                                    <label class="form-label" for="nomeCadastro">Insira seu nome completo (*)</label>
-                                </div>
-              
                                 <div class="row">
                                     <div class="col mb-4">
               
                                         <div class="form-outline">
                                             <input type="email" class="form-control" id="emailCadastro" />
-                                            <label for="emailCadastro" class="form-label">Insira seu E-mail (*)</label>
+                                            <label for="emailCadastro" class="form-label">Insira seu E-mail</label>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-md-6 mb-4">
+                                    <div class="col mb-4">
                                         <div class="form-outline">
                                             <input type="password" class="form-control" id="senha1Cadastro" />
-                                            <label for="senha1Cadastro" class="form-label">Insira uma Senha (*)</label>
+                                            <label for="senha1Cadastro" class="form-label">Insira sua Senha</label>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 mb-4">
-                                        <div class="form-outline">
-                                            <input type="password" class="form-control" id="senha2Cadastro" />
-                                            <label for="senha2Cadastro" class="form-label">Re-insira a senha (*)</label>
-                                        </div>
-                                    </div>
-              
-                                </div>
-
-                            
-                                <span class="text-muted">Mais dados poderão ser adicionados na aba do seu perfil, ok?</span>
-                            
-                                <div class="form-check my-3">
-                                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
-                                    <label class="form-check-label" for="form2Example3g">
-                                  Concordo com a <a href="#!" class="text-body"><u>Política de Privacidade</u></a>
-                                    </label>
                                 </div>
                                 <div class="my-4 text-center">
-                                    <button type="submit" class="btn btn-success btn-lg mb-1 mx-3">Criar Conta</button>
-                                    <button type="button" class="btn btn-light btn-lg">Limpar Campos</button>
+                                    <button type="submit" class="btn btn-success btn-lg mb-1 mx-3">Entrar</button>
+                                    <button type="button" class="btn btn-lg">Esqueci minha senha</button>
                                 </div>
                                 <div>
-                                    <span>Já tem uma conta? </span> <a href="login.html">Faça Login</a>
+                                    <span>Ainda não é cadastrado? </span> <a href="cadastro.html">Cadastre-se</a>
                                 </div>
                           </form>
-
-
-                          
                         </div>
                       </div>
                     </div>
