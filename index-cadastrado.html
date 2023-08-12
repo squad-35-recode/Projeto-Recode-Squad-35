@@ -34,7 +34,24 @@
                 <a class="nav-link" href="#"> <i class="fas fa-book-open"></i> Cursos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> <i class="fas fa-user"></i> Cadastrar / Entrar</a>
+                <a class="nav-link" href="#"> <i class="fas fa-envelope"></i> Mensagens</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fas fa-bell"></i></i> Notificações</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Perfil
+                </a>
+                <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-user-circle fs-4 px-1"></i> <span>Nome de Usuário</span></a></li>
+                  <li><a class="dropdown-item" href="#"><button class="btn border" id="btnPerfil">Ver Perfil</button></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Configurações</a></li>
+                  <li><a class="dropdown-item" href="#">Ajuda</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sair</a></li>
+                </ul>
               </li>
             </ul>
             <form class="d-flex">
@@ -48,7 +65,7 @@
     <main>
         <!-- Carousel Banners -->
         <section class="container-full">
-            <div id="carouselBanner" cass="carousel slide" data-bs-ride="carousel">
+            <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -80,17 +97,27 @@
             
             <section class="col col-md-9">
                 <!-- Input Postagem -->
-                <section class="jumbotron border rounded bg-white my-3 p-3">
-                    <h1 class="display-4">Olá!</h1>
-                    <p class="lead">Precisa de ajuda para melhorar seus negócios ou de um caminho a seguir?</p>
-                    <hr class="my-4">
-                    <p>Cadastre-se ou acesse sua conta na plataforma para interagir com a comunidade, pedir ajuda, ajudar, anunciar vaga ou curso</p>
-
-                    <div>
-                        <a class="btn btn-primary btn-lg mx-4" href="cadastro.html" role="button">Cadastre-se</a>
-                        <a class="btn btn-white btn-lg border" href="login.html" role="button" id="btLoginJumbo">Fazer Login</a>
-                    </div>
-                  </section>
+                <section class="container my-3 border rounded p-3 bg-white">
+                    <label for="formPostagem" class="fw-semibold fs-3 mb-3"> Faça uma postagem: </label>
+                    <form action="POST" id="formPostagem">
+                        <div class="mb-3">
+                            <label for="inputTituloPostagem" class="form-label fs-4">Título do Post</label>
+                            <input type="text" class="form-control" id="inputTituloPostagem" placeholder="Título da Postagem">
+                          </div>
+                          <div class="mb-3">
+                            <textarea class="form-control" id="areaTextoPost" rows="3" placeholder="Digite seu texto aqui"></textarea>
+                          </div>
+                          <div>
+                            <button class="btn fs-4 border rounded-circle mb-3 mx-2 shadow-sm" id="enviarArquivo" data-bs-toggle="tooltip" data-bs-placement="top" title="Adicionar Imagem"><i class="fas fa-image"></i></button>
+                            <button class="btn fs-4 border rounded-circle mb-3 mx-2 shadow-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Adicionar Vídeo" id="enviarArquivo"><i class="fas fa-video"></i></button>
+                            <button class="btn fs-4 border rounded-circle mb-3 mx-2 shadow-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Compartilhar Evento" id="enviarArquivo"><i class="fas fa-calendar-alt"></i></button>
+                          </div>
+                          <div>
+                              <button class="btn bg-primary text-light">Postar</button>
+                              <button class="btn text-danger">Excluir</button>
+                          </div>
+                    </form>
+                </section>
             
                 <h3 class="text-center">Feed</h3>
                 <!-- Área de Posts -->

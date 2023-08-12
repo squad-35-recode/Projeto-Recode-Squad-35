@@ -42,6 +42,22 @@ body {
 
 }
 
+#tagAds {
+    padding: 0;
+    width: fit-content;
+    opacity: 0.5;
+}
+
+.linkRecomedacoes {
+    text-decoration: none!important;
+    color: black;
+}
+
+.linkRecomedacoes:hover {
+    text-decoration: underline!important;
+    color: blue;
+}
+
 
 @media screen and (max-width: 990px) {
     #areaLateral {
