@@ -10,12 +10,6 @@ body {
     color: white;
 }
 
-/* Carousel */
-.carousel-item {
-    height: 50vh;
-}
-
-
 /* Área de Postagem */
 #enviarArquivo {
     transition: 0.5s ease;
