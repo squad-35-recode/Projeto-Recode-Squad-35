@@ -94,7 +94,24 @@
                     </div>
                   </section>
             
-                <h3 class="text-center">Feed</h3>
+                <div class="container">
+                    <div class="row">
+                        <h3 class="text-center">Feed</h3>
+                    </div>
+                    <div class="row d-flex justify-content-end">
+                        <div class="dropdown d-flex justify-content-end">
+                            <button class="btn dropdown-toggle menuCategoria" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Filtrar Categoria
+                            </button>
+                            <ul class="dropdown-menu px-2 corpoMenuCategoria" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item bg-primary text-light rounded text-center mt-1 btnCategoria pt-0" href="#">Vagas</a></li>
+                                <li><a class="dropdown-item bg-success text-light rounded text-center mt-1 btnCategoria pt-0" href="#">Cursos</a></li>
+                                <li><a class="dropdown-item bg-warning text-light rounded text-center mt-1 btnCategoria pt-0" href="#">Dúvidas</a></li>
+                                <li><a class="dropdown-item bg-info text-light rounded text-center mt-1 btnCategoria pt-0" href="#">Dicas</a></li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
                 <!-- Área de Posts -->
                 <section>
                     <!-- Post 2 Exemplo-->
@@ -111,6 +128,12 @@
                                 <span class="text-muted">Resumo da Bio do Usuário</span>
                                 <br>
                                 <span class="text-muted">12h</span>
+                                <br>
+                                <div class="border rounded position-absolute bg-success mt-2 text-white px-2 py-0 catPost">Cursos</div>
+                                
+                            </div>
+                            <div class="col-1">
+                                
                             </div>
                         </div>
                         <div class="mb-3">
@@ -143,6 +166,8 @@
                                 <span class="text-muted">Resumo da Bio do Usuário</span>
                                 <br>
                                 <span class="text-muted">12h</span>
+                                <br>
+                                <div class="border rounded position-absolute bg-info mt-2 text-white px-2 py-0 catPost">Dicas</div>
                             </div>
                         </div>
                         <div class="mb-3">
@@ -172,7 +197,6 @@
             <!-- Área Lateral -->
             <aside class="col-3 mx-3" id="areaLateral">
                 <section class="my-3 border rounded p-3 bg-white">
-                    <div class="card-tag position-absolute top-0 start-50 translate-middle text-white py-1 px-3 fw-semibold rounded text-center shadow">% Familiar</div>
                     <div class="text-muted border rounded position-absolute bg-white mx-1 mt-1" id="tagAds">Ads</div>
                     <div id="bannerDivulgação">
                         <img src="./image/ads-itau.jpg" alt="" class="img-fluid">
