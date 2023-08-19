@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="stylePerfil.css">
 
-  <title>Perfil</title>
+  <title>Editar Perfil</title>
 </head>
 
 <body>
@@ -80,115 +80,153 @@
   <div class="container">
     <div class="main-body">
       <div class="row gutters-sm">
-        <div class="col-md-4 mb-3">
+        <div class="col mb-3">
           <div class="card">
             <div class="card-body">
               <div class="d-flex flex-column align-items-center text-center">
                 <div class="rounded imgPerfilUsuario p-0 border">
                   <img src="./image/pessoas/pessoa-4.jpg" class="img-fluid imgPerfilUsuario2" alt="">
                 </div>
+                <div>
+                  <button class="btn btn-primary text-white btnMudarFoto">
+                    Trocar Foto
+                  </button>
+                </div>
                 <div class="mt-3">
                   <h4>Usuário</h4>
                   <p class="text-secondary mb-1">Empreendedor</p>
                   <p class="text-muted font-size-sm">São Paulo, São Paulo, SP</p>
-                  <button class="btn btn-primary">Seguir</button>
-                  <button class="btn btn-outline-primary">Enviar Mensagem</button>
                 </div>
               </div>
             </div>
           </div>
           <div class="card mt-3 p-2">
             <h5 class="text-center text-muted">Redes de Contato</h5>
-            <ul class="list-group list-group-flush text-center">
-              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-between flex-wrap">
                 <h6 class="mb-0"><i class="fas fa-store" style="font-size: 20px;"></i> <span class="bulletContato">&#x2022;</span> Loja</h6>
-                <a href="#"> minhaloja.com.br</a>
+                <label for="basic-url" class="form-label">URL da sua loja</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon3">https://seusite.com.br</span>
+                  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div>
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+              <li class="list-group-item d-flex justify-content-between flex-wrap">
                 <h6 class="mb-0"><i class="fab fa-instagram" style="font-size: 20px;"></i> <span class="bulletContato">&#x2022;</span> Instagram</h6>
-                <a href="#">@usuario</a>
+                <div class="input-group flex-nowrap my-2">
+                  <span class="input-group-text" id="addon-wrapping">@</span>
+                  <input type="text" class="form-control" placeholder="Nome de Usuário" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                <h6 class="mb-0"><i class="fab fa-twitter" style="font-size: 20px;"></i> <span class="bulletContato">&#x2022;</span> Twitter</h6>
-                <a href="#">@usuario</a>
+              <li class="list-group-item d-flex justify-content-between flex-wrap">
+                <h6 class="mb-0"><i class="fab fa-twitter" style="font-size: 20px;"></i>  <span class="bulletContato">&#x2022;</span> Twitter</h6>
+                <div class="input-group flex-nowrap my-2">
+                  <span class="input-group-text" id="addon-wrapping">@</span>
+                  <input type="text" class="form-control" placeholder="Nome de Usuário" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+              <li class="list-group-item d-flex justify-content-between flex-wrap">
                 <h6 class="mb-0"><i class="fab fa-facebook" style="font-size: 20px;"></i></i> <span class="bulletContato">&#x2022;</span> Facebook</h6>
-                <a href="#">@usuario</a>
+                <div class="input-group flex-nowrap my-2">
+                  <span class="input-group-text" id="addon-wrapping">@</span>
+                  <input type="text" class="form-control" placeholder="Nome de Usuário" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-center flex-wrap">
+                <input type="button" class="btn btn-primary" value="Salvar Mudanças">
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-md-8">
-          <div class="card mb-3">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-sm-3">
-                  <h6 class="mb-0">Nome Completo</h6>
+        <div class="col-lg-8">
+					<div class="card mb-3">
+						<div class="card-body">
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Nome Completo</h6>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="text" class="form-control" value="Usuário Usuário">
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Email</h6>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="text" class="form-control" value="usuario@email.com">
+                  <div class="form-check float-end">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Compartilhar esse dado?
+                    </label>
+								  </div>
                 </div>
-                <div class="col-sm-9 text-secondary">
-                  Usuário Usuário
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-sm-3">
-                  <h6 class="mb-0">Email</h6>
-                </div>
-                <div class="col-sm-9 text-secondary">
-                  usuario@email.com
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-sm-3">
-                  <h6 class="mb-0">Telefone</h6>
-                </div>
-                <div class="col-sm-9 text-secondary">
-                  (11) 1234-5678
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-sm-3">
-                  <h6 class="mb-0">Celular</h6>
-                </div>
-                <div class="col-sm-9 text-secondary">
-                  (11) 91234-5678
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-sm-3">
-                  <h6 class="mb-0">Endereço</h6>
-                </div>
-                <div class="col-sm-9 text-secondary">
-                  São Paulo, São Paulo, SP
-                </div>
-              </div>
-              <hr>
-              <div class="row">
-                <div class="col-sm-12">
-                  <a class="btn btn-info " target="__blank" href="perfil-edit.html">Editar</a>
-                </div>
-              </div>
-            </div>
-          </div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Telefone</h6>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="text" class="form-control" value="(11) 1234-5678">
+                  <div class="form-check float-end">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Compartilhar esse dado?
+                    </label>
+								  </div>
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Celular</h6>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="text" class="form-control" value="(11) 91234-5678">
+                  <div class="form-check float-end">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Compartilhar esse dado?
+                    </label>
+								  </div>
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-sm-3">
+									<h6 class="mb-0">Endereço</h6>
+								</div>
+								<div class="col-sm-9 text-secondary">
+									<input type="text" class="form-control" value="São Paulo, São Paulo, SP">
+                  <div class="form-check float-end">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Compartilhar esse dado?
+                    </label>
+								  </div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3"></div>
+								<div class="col-sm-9 text-secondary">
+									<input type="button" class="btn btn-primary px-4" value="Salvar Mudanças">
+                  <a type="button" class="btn btn-info text-white px-3 float-end"> Trocar Senha </a>
+								</div>
+							</div>
+						</div>
+					</div>
 
           <div class="row gutters-sm">
             <div class="col-sm-6 mb-3">
-              <div class="card h-100 p-3">
+              <div class="card h-100 p-3 cardMeio">
                 <h5 class="text-center text-muted">Interesses</h5>
                 <div class="mb-3" style="height: 5px">
-                  <ul>
-                    <li>
-                      Gestão Financeira
-                    </li>
-                    <li>
-                      Desenvolvimento Pessoal
-                    </li>
-
-                  </ul>
+                  <div class="form-group">
+                    <input class="form-control form-control-md mb-2" type="text" placeholder="Adicione um interesse" aria-label="interesse">
+                    <input class="form-control form-control-md mb-2" type="text" placeholder="Adicione um interesse" aria-label="interesse">
+                    <input class="form-control form-control-md mb-2" type="text" placeholder="Adicione um interesse" aria-label="interesse">
+                    <a href=""><i class="fas fa-plus-square float-end" style="font-size: 20px;"></i></a>
+                    <input type="submit" class="btn btn-primary px-3" value="Salvar Mudanças">
+                  </div>
                 </div>
               </div>
             </div>
@@ -204,6 +242,8 @@
               </div>
             </div>
           </div>
+
+          <h2 class="text-center mt-3"> Últimas Postagens</h2>
           <!-- begin timeline -->
           <ul class="timeline">
             <li>
@@ -255,19 +295,6 @@
                       class="fa fa-comments fa-fw fa-lg m-r-3"></i> Comentar</a>
                   <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
                       class="fa fa-share fa-fw fa-lg m-r-3"></i> Compartilhar</a>
-                </div>
-                <div class="timeline-comment-box">
-                  <div class="user"><img src="./image/pessoas/pessoa-400x400.jpeg"></div>
-                  <div class="input">
-                    <form action="">
-                      <div class="input-group d-flex wrap">
-                        <input type="text" class="form-control w-100" placeholder="Digite um comentário">
-                        <span class="input-group-btn py-1">
-                          <button class="btn btn-primary f-s-12 rounded-corner" type="button">Comentar</button>
-                        </span>
-                      </div>
-                    </form>
-                  </div>
                 </div>
               </div>
               <!-- end timeline-body -->
