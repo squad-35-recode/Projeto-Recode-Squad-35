@@ -29,6 +29,16 @@ body {
     height: 250px;
 }
 
+.cardCurso {
+    width: 100%!important;
+    height: 100%!important;
+}
+
+.card-footer {
+    border: none!important;
+    background-color: white;
+}
+
 
 /*
 .fundoHeroCursos {
