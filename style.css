@@ -1,3 +1,4 @@
+
 @charset "UTF-8"; 
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Titillium+Web&display=swap');
@@ -40,6 +41,7 @@ h2 {
 p {
     font-family: 'Roboto Condensed', sans-serif;
     color: var(--color-text);
+    background-color: #e2e8f0;
 }
 
 /* Menu Principal */
@@ -108,5 +110,34 @@ p {
 .imgPerfilUsuario {
     width: 300px!important;
     height: 300px!important;
+
     background: var(--color-primary)!important;
 }
+
+    background: white!important;
+}
+
+.corpoMenuCategoria {
+    border: none!important;
+}
+
+.btnCategoria {
+    transition: 0.4s ease;
+    opacity: 0.65;
+}
+
+.btnCategoria:hover {
+    transform: scale(1.1);
+}
+
+.menuCategoria {
+    width: fit-content!important;
+}
+
+.catPost {
+    opacity: 0.65;
+}
+
+
+
+

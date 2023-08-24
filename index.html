@@ -32,7 +32,7 @@
                 <a class="nav-link active" aria-current="page" href="index.html"> <i class="fas fa-home"></i> Página Principal</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> <i class="fas fa-book-open"></i> Cursos</a>
+                <a class="nav-link" href="cursos.html"> <i class="fas fa-book-open"></i> Cursos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="cadastro.html"> Cadastrar</a>
@@ -51,8 +51,8 @@
 
     <main>
         <!-- Carousel Banners -->
-        <section class="container-full">
-            <div id="carouselBanner" cass="carousel slide" data-bs-ride="carousel">
+        <section class="container-full containerCarousel">
+            <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -87,15 +87,32 @@
                     <h1 class="display-4">Olá!</h1>
                     <p class="lead">Precisa de ajuda para melhorar seus negócios ou de um caminho a seguir?</p>
                     <hr class="my-4">
-                    <p>Cadastre-se ou acesse sua conta na plataforma para interagir com a comunidade, pedir ajuda, ajudar, anunciar vaga ou curso</p>
+                    <p>Cadastre-se ou acesse sua conta na plataforma para interagir com a comunidade, pedir ajuda, ajudar, anunciar vaga ou curso e muito mais!</p>
 
                     <div>
                         <a class="btn btn-primary btn-lg mx-4" href="cadastro.html" role="button">Cadastre-se</a>
                         <a class="btn btn-white btn-lg border" href="login.html" role="button" id="btLoginJumbo">Fazer Login</a>
                     </div>
-                  </section>
+                </section>
             
-                <h3 class="text-center">Feed</h3>
+                <div class="container">
+                    <div class="row">
+                        <h3 class="text-center">Feed</h3>
+                    </div>
+                    <div class="row d-flex justify-content-end">
+                        <div class="dropdown d-flex justify-content-end">
+                            <button class="btn dropdown-toggle menuCategoria" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Filtrar Categoria
+                            </button>
+                            <ul class="dropdown-menu px-2 corpoMenuCategoria" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item bg-primary text-light rounded text-center mt-1 btnCategoria pt-0" href="#">Vagas</a></li>
+                                <li><a class="dropdown-item bg-success text-light rounded text-center mt-1 btnCategoria pt-0" href="#">Cursos</a></li>
+                                <li><a class="dropdown-item bg-warning text-light rounded text-center mt-1 btnCategoria pt-0" href="#">Dúvidas</a></li>
+                                <li><a class="dropdown-item bg-info text-light rounded text-center mt-1 btnCategoria pt-0" href="#">Dicas</a></li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
                 <!-- Área de Posts -->
                 <section>
                     <!-- Post 2 Exemplo-->
@@ -112,6 +129,12 @@
                                 <span class="text-muted">Resumo da Bio do Usuário</span>
                                 <br>
                                 <span class="text-muted">12h</span>
+                                <br>
+                                <div class="border rounded position-absolute bg-success mt-2 text-white px-2 py-0 catPost">Cursos</div>
+                                
+                            </div>
+                            <div class="col-1">
+                                
                             </div>
                         </div>
                         <div class="mb-3">
@@ -144,6 +167,8 @@
                                 <span class="text-muted">Resumo da Bio do Usuário</span>
                                 <br>
                                 <span class="text-muted">12h</span>
+                                <br>
+                                <div class="border rounded position-absolute bg-info mt-2 text-white px-2 py-0 catPost">Dicas</div>
                             </div>
                         </div>
                         <div class="mb-3">
@@ -173,12 +198,10 @@
             <!-- Área Lateral -->
             <aside class="col-3 mx-3" id="areaLateral">
                 <section class="my-3 border rounded p-3 bg-white">
-                    <div class="card-tag position-absolute top-0 start-50 translate-middle text-white py-1 px-3 fw-semibold rounded text-center shadow">% Familiar</div>
                     <div class="text-muted border rounded position-absolute bg-white mx-1 mt-1" id="tagAds">Ads</div>
                     <div id="bannerDivulgação">
                         <img src="./image/ads-itau.jpg" alt="" class="img-fluid">
                     </div>
-                   
                 </section>
 
                 <section class="container my-3 border rounded p-4 bg-white">
