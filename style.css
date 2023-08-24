@@ -1,14 +1,61 @@
 
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Titillium+Web&display=swap');
+
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+:root {
+    --color-primary: #F2F2F2;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: #848bc82e;
+    --color-primary-variant: #111e88;
+    --color-secudary-variant: #7676FF;
+    --color-dark-variant: #677483;
+    --color-background: ##F2F2F2;
+    --color-text: #000000;
+}
+
+h1 {
+    font-family: 'Titillium Web', sans-serif;
+    color: var(--color-dark);
+}
+
+h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--color-text)
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--color-text);
     background-color: #e2e8f0;
 }
 
 /* Menu Principal */
 #btnPerfil:hover {
-    background-color: rgb(118, 118, 255);
-    color: white;
+    background-color: var(--color-secundary-variant);
+    color: var(--color-info-light);
+}
+
+/* Carousel */
+.carousel-item {
+    margin: 46px auto 0px -10px;
+    width: 1550px;
+    padding: 10px;
+    height: 70vh; 
 }
 
 /* Área de Postagem */
@@ -22,13 +69,13 @@ body {
 
 #nomeUsuario {
     text-decoration: none;
-    color: black;
+    color: var(--color-dark-variant);
     transition: 0.2s ease;
 }
 
 #nomeUsuario:hover {
     text-decoration: underline;
-    color: blue;
+    color: var(--color-primary-variant);
 }
 
 #imgPerfilFeed {
@@ -45,12 +92,12 @@ body {
 
 .linkRecomedacoes {
     text-decoration: none!important;
-    color: black;
+    color: var(--color-dark);
 }
 
 .linkRecomedacoes:hover {
     text-decoration: underline!important;
-    color: blue;
+    color: var(--color-dark);
 }
 
 
@@ -58,11 +105,15 @@ body {
     #areaLateral {
         display: none;
     }
-};
+}
 
 .imgPerfilUsuario {
     width: 300px!important;
     height: 300px!important;
+
+    background: var(--color-primary)!important;
+}
+
     background: white!important;
 }
 
@@ -86,6 +137,7 @@ body {
 .catPost {
     opacity: 0.65;
 }
+
 
 
 
