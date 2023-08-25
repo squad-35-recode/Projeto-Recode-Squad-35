@@ -1,124 +1,153 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Link CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <!-- Link JavaScript Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 
     <!-- Link Font-Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 
     <link rel="stylesheet" href="style.css">
 
+    <script async src="script.js"></script>
+
     <title>Cadastro</title>
 </head>
-<body style="padding-top: 70px;">
+
+<body>
     <!-- Menu Principal -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Rede Profissionalizante</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html"> <i class="fas fa-home"></i> Página Principal</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cursos.html"> <i class="fas fa-book-open"></i> Cursos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="cadastro.html"> Cadastrar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html"> Entrar</a>
-                </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Pesquisar Assunto" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Pesquisar</button>
-            </form>
-          </div>
+            <a class="navbar-brand" href="#">Rede Profissionalizante</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html"> <i class="fas fa-home"></i> Página
+                            Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cursos.html"> <i class="fas fa-book-open"></i> Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cadastro.html"> Cadastrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"> Entrar</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar Assunto" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+                </form>
+            </div>
         </div>
     </nav>
 
     <main>
-        
+
         <section class="h-100 h-custom">
             <div class="container py-5 h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col-lg-8 col-xl-6">
                         <div class="card rounded-3">
-                            <img src="image/empreendedor.jpg"
-                          class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
-                          alt="Sample photo">
+                            <img src="image/empreendedor.jpg" class="w-100"
+                                style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
+                                alt="Sample photo">
                             <div class="card-body p-4 p-md-5">
-                            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2 text-center">Cadastre-se</h3>
-              
-                            <form class="px-md-2">
-              
-                                <div class="form-outline mb-4">
-                                    <input type="text" id="nomeCadastro" class="form-control" />
-                                    <label class="form-label" for="nomeCadastro">Insira seu nome completo (*)</label>
-                                </div>
-              
-                                <div class="row">
-                                    <div class="col mb-4">
-              
-                                        <div class="form-outline">
-                                            <input type="email" class="form-control" id="emailCadastro" />
-                                            <label for="emailCadastro" class="form-label">Insira seu E-mail (*)</label>
-                                        </div>
-                                    </div>
-                                </div>
+                                <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2 text-center">Cadastre-se</h3>
 
-                                <div class="row">
-                                    <div class="col-md-6 mb-4">
-                                        <div class="form-outline">
-                                            <input type="password" class="form-control" id="senha1Cadastro" />
-                                            <label for="senha1Cadastro" class="form-label">Insira uma Senha (*)</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-4">
-                                        <div class="form-outline">
-                                            <input type="password" class="form-control" id="senha2Cadastro" />
-                                            <label for="senha2Cadastro" class="form-label">Re-insira a senha (*)</label>
-                                        </div>
-                                    </div>
-              
-                                </div>
+                                <form class="px-md-2 requires-validation" novalidate id="formCadastro">
 
-                            
-                                <span class="text-muted">Mais dados poderão ser adicionados na aba do seu perfil, ok?</span>
-                            
-                                <div class="form-check my-3">
-                                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
-                                    <label class="form-check-label" for="form2Example3g">
-                                  Concordo com a <a href="#!" class="text-body"><u>Política de Privacidade</u></a>
-                                    </label>
-                                </div>
-                                <div class="my-4 text-center">
-                                    <button type="submit" class="btn btn-success btn-lg mb-1 mx-3">Criar Conta</button>
-                                    <button type="button" class="btn btn-light btn-lg">Limpar Campos</button>
-                                </div>
-                                <div>
-                                    <span>Já tem uma conta? </span> <a href="login.html">Faça Login</a>
-                                </div>
-                            </form> 
+                                    <div class="form-outline mb-4">
+                                        
+                                        <input type="text" id="nomeCadastro" class="form-control" required>
+                                        <div class="invalid-feedback">Nome não pode ser vazio</div>
+                                        <label class="form-label" for="nomeCadastro">Insira seu nome completo
+                                            (*)</label>
+                                        
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col mb-4">
+
+                                            <div class="form-outline">
+                                                <input type="email" class="form-control" id="emailCadastro" required>
+                                                <div class="invalid-feedback">Formato de e-mail não reconhecido ou vazio</div>
+                                                <label for="emailCadastro" class="form-label">Insira seu E-mail
+                                                    (*)</label>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="text-danger text-center mb-1 error" id="senhasInco">
+                                            
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input type="password" class="form-control" id="senha1Cadastro"
+                                                    required>
+                                                <label for="senha1Cadastro" class="form-label">Insira uma Senha
+                                                    (*)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input type="password" class="form-control" id="senha2Cadastro"
+                                                    required>
+                                                <label for="senha2Cadastro" class="form-label">Re-insira a senha
+                                                    (*)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="text-muted">Mais dados poderão ser adicionados na aba do seu perfil,
+                                        ok?</span>
+
+                                    <div class="form-check my-3">
+                                        <input class="form-check-input me-2" type="checkbox" value=""
+                                            id="checkPolPri" required>
+                                        <label class="form-check-label" for="checkPolPri">
+                                            Concordo com a <a href="#!" class="text-body"><u>Política de
+                                                    Privacidade</u></a>
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            Por favor, confirme a opção de política de privacidade
+                                        </div>
+                                    </div>
+                                    <div class="my-4 text-center">
+                                        <button type="button" class="btn btn-success btn-lg mb-1 mx-3" id="submitBtn"
+                                            >Criar Conta</button>
+                                        <button type="button" class="btn btn-light btn-lg"
+                                            onclick="limparCampos()">Limpar Campos</button>
+                                    </div>
+                                    <div>
+                                        <span>Já tem uma conta? </span> <a href="login.html">Faça Login</a>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    
 </body>
+
 </html>

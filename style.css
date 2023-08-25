@@ -14,7 +14,7 @@ body {
 
 :root {
     --color-primary: #F2F2F2;
-    --color-danger: #ff7782;
+    --color-danger: #ff4352;
     --color-success: #41f1b6;
     --color-warning: #ffbb55;
     --color-white: #fff;
@@ -132,7 +132,6 @@ p {
 .catPost {
     opacity: 0.65;
 }
-
 
 
 
