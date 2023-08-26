@@ -23,7 +23,7 @@ body {
     --color-dark: #363949;
     --color-light: #848bc82e;
     --color-primary-variant: #111e88;
-    --color-secudary-variant: #7676FF;
+    --color-secodary-variant: #7676FF;
     --color-dark-variant: #677483;
     --color-background: ##F2F2F2;
     --color-text: #000000;
@@ -46,7 +46,7 @@ p {
 
 /* Menu Principal */
 #btnPerfil:hover {
-    background-color: var(--color-secundary-variant);
+    background-color: var(--color-secondary-variant);
     color: var(--color-info-light);
 }
 

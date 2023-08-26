@@ -7,6 +7,10 @@ body {
     background-color: #e2e8f0;
 }
 
+.tituloCursos {
+    font-weight: bold!important;
+}
+
 #pesquisaCursos {
     cursor: pointer;
 }
