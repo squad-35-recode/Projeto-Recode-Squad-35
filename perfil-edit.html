@@ -25,7 +25,7 @@
   <title>Editar Perfil</title>
 </head>
 
-<body>
+<body style="margin-top:0!important;">
   <!-- Menu Principal -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
@@ -95,9 +95,11 @@
                   </button>
                 </div>
                 <div class="mt-3">
-                  <h4>Usuário</h4>
-                  <p class="text-secondary mb-1">Empreendedor</p>
-                  <p class="text-muted font-size-sm">São Paulo, São Paulo, SP</p>
+                  <div class="form-group">
+                    <input class="form-control form-control-md mb-2" type="text" placeholder="Profissão ou Formação" aria-label="profissão">
+                    <textarea class="form-control mb-2" id="areaTextoPost" rows="3" placeholder="Digite sua Bio"></textarea>
+                    <input type="submit" class="btn btn-primary px-3" value="Salvar Mudanças">
+                  </div>
                 </div>
               </div>
             </div>
