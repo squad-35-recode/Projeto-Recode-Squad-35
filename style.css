@@ -29,6 +29,13 @@ body {
     --color-text: #000000;
 }
 
+.tituloMais {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+
+}
+
 h1 {
     font-family: 'Titillium Web', sans-serif;
     color: var(--color-dark);
